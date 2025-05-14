@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Book } from "@/types/books";
-import { Heart, HeartPlus } from "lucide-react"; // Heart = full icon, HeartPlus = empty icon
+import { Heart, HeartPlus } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

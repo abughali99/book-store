@@ -30,8 +30,6 @@ export const Header = () => {
               <Image src={logo} alt="Logo" width={100} height={60} />
             </Link>
           </div>
-
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="text-white text-sm font-medium hover:text-primary transition-colors">
               Home
@@ -51,8 +49,6 @@ export const Header = () => {
               />
             </form>
           </nav>
-
-          {/* Mobile Search & Menu Buttons */}
           <div className="flex md:hidden items-center gap-3">
             {!isSearchVisible && (
               <button onClick={() => setIsSearchVisible(true)} aria-label="Open search">
@@ -66,8 +62,6 @@ export const Header = () => {
             )}
           </div>
         </div>
-
-        {/* Mobile Search Bar */}
         {isSearchVisible && (
           <div className="absolute top-0 left-0 w-full h-16 bg-background z-50 px-4 flex items-center">
             <form onSubmit={handleSearch} className="flex-1 flex items-center">
@@ -88,8 +82,6 @@ export const Header = () => {
             </form>
           </div>
         )}
-
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden w-full py-4 pb-6">
             <nav className="flex flex-col space-y-4 text-white">
